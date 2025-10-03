@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>JIHAN MELYANASARI P | HTML</title>
+    </head>
+    <body>
+        <header class="header">
+            <a href="#" class="navbar-logo">Pizza AJ</a>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#deals">🏷️ Deals</a>
+                <a href="#menu">🍕 Menu</a> 
+                <a href="#order">📝 Order</a>
+            </nav>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </header>
+        
+        <section class="home" id="home">
+            <div class="home-content">
+                <h1>Selamat Datang <br>di <span>Pizza AJ</span></h1>
+                <p>Nikmati kelezatan pizza dengan cita rasa autentik, dibuat dari bahan-bahan segar pilihan. Kami hadir untuk memberikan pengalaman makan yang tak terlupakan dengan berbagai pilihan topping yang menggugah selera. Ayo, ciptakan momen spesial bersama Pizza AJ!</p>
+            </div>
+            <img src="assets/pizza bububb.png" alt="">
+        </section>
+        
+        <section class="deals" id="deals">
+            <div class="deals-title">
+                <h1>GET MORE WITH  OUR  DEALS🎄</h1>
+            </div>
+            <div class="image-container">
+                <img src="assets/Promo Christmas.png" alt="Promo Natal"/>
+                <img src="assets/dinner special.png" alt="Promo Desember"/>
+            </div>
+        </section>
+
+        <section class="menu" id="menu">
+            <div class="menu-title">
+                <h1>MENU</h1>
+            </div>
+        
+            <div class="menu-card">
+                <div class="card">
+                    <img src="assets/cheese.png" alt="">
+                    <h2>Pizza Cheese</h2>
+                    <p class="price">Harga: Rp 88.000</p>
+                </div>
+                <div class="card">
+                    <img src="assets/meat.png" alt="Pizza Meat">
+                    <h2>Pizza Meat</h2>
+                    <p class="price">Harga: Rp 102.000</p>
+                </div>
+                <div class="card">
+                    <img src="assets/pepperoni.png" alt="Pizza Pepperoni">
+                    <h2>Pizza Pepperoni</h2>
+                    <p class="price">Harga: Rp 96.000</p>
+                </div>
+                <div class="card">
+                    <img src="assets/pizza supreme.png" alt="Pizza Supreme">
+                    <h2>Pizza supreme</h2>
+                    <p class="price">Harga: Rp 120.000</p>
+                </div>
+                <div class="card">
+                    <img src="assets/pizza onion.png" alt="Pizza Onion">
+                    <h2>Pizza onion</h2>
+                    <p class="price">Harga: Rp 100.000</p>
+                </div>
+                <div class="card">
+                    <img src="assets/lasagna.png" alt="">
+                    <h2>Lasagna</h2>
+                    <p class="price">Harga: Rp 55.000</p>
+                </div>
+                <div class="card">
+                    <img src="assets/bolognesse.png" alt="">
+                    <h2>Spaghetti Bolognese</h2>
+                    <p class="price">Harga: Rp 48.000</p>
+                </div>
+                <div class="card">
+                    <img src="assets/Chicken Fusilli Pasta Creamy.png" alt="">
+                    <h2>Chicken Fusilli Pasta Creamy</h2>
+                    <p class="price">Harga: Rp 72.000</p>
+                </div>
+                <div class="card">
+                    <img src="assets/Chicken Wings.png" alt="Chicken Wings">
+                    <h2>Chicken Wings</h2>
+                    <p class="price">Harga: Rp 69.000</p>
+                </div>
+                <div class="card">
+                    <img src="assets/potato wedges.png" alt="">
+                    <h2>Potato Wedges</h2>
+                    <p class="price">Harga: Rp 43.000</p>
+                </div>
+                <div class="card">
+                    <img src="assets/lemon tea.png" alt="Lemon Tea">
+                    <h2>Lemon Tea</h2>
+                    <p class="price">Harga: Rp 16.000</p>
+                </div>
+                <div class="card">
+                    <img src="assets/matcha lemonade.png" alt="">
+                    <h2>Matcha Lemonade</h2>
+                    <p class="price">Harga: Rp 22.000</p>
+                </div>
+                <div class="card">
+                    <img src="assets/milkshake strawberry.png" alt="Milkshake Straw">
+                    <h2>Strawberry Milkshake</h2>
+                    <p class="price">Harga: Rp 28.000</p>
+                </div>
+                <div class="card">
+                    <img src="assets/milkshake chocolate.png" alt="Milkshake Choco">
+                    <h2>Chocolate Milkshake</h2>
+                    <p class="price">Harga: Rp 28.000</p>
+                </div>
+                <div class="card">
+                    <img src="assets/redvelvet.png" alt="Redvelvet">
+                    <h2>Red Velvet Milkshake</h2>
+                    <p class="price">Harga: Rp 32.000</p>
+                </div>
+            </section>
+            
+            <section class="order" id="order">
+                <div class="order-title">
+                    <h1>ORDER</h1>
+                </div>
+                
+                <form action="hasil.jsp" method="post">
+                    <table class="form-table">
+                        <tr>
+                            <td class="form-name">Name</td>
+                            <td><input type="text" name="nama"></td>
+                        </tr>
+                        <tr>
+                            <td class="form-name">Menu</td>
+                            <td><select name="menu">
+                                <option value="">PILIH</option>
+                                <option value="Pizza Cheese Lovers">Pizza Cheese Lovers</option>
+                                <option value="Pizza Meat Lovers">Pizza Meat Lovers</option>
+                                <option value="Pizza Supreme">Pizza Supreme</option>
+                                <option value="Pizza Pepperoni">Pizza Pepperoni</option>
+                                <option value="Pizza Onion">Pizza Onion</option>
+                                <option value="Lasagna">Lasagna</option>
+                                <option value="Spaghetti Bolognese">Spaghetti Bolognese</option>
+                                <option value="Chicken Fusilli Pasta Creamy">Chicken Fusilli Pasta Creamy</option>
+                                <option value="Chicken Wings">Chicken Wings</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td class="form-name">Jumlah</td>
+                            <td><input type="number" name="jumlah" min="1" required></td>
+                        </tr>
+                        <tr>
+                            <td class="form-name">No.HP</td>
+                            <td><input type="number" name="no.hp"></td>
+                        </tr>
+                        <tr>
+                            <td class="form-name">Email</td>
+                            <td><input type="email" name="email"></td>
+                        </tr>
+                        <tr>
+                            <td class="form-name">Alamat</td>
+                            <td><textarea id="address" name="alamat"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td class="form-name">Pembayaran</td>
+                            <td>
+                                <div class="form-payment">
+                                    <input type="radio" id="cash" name="pembayaran" value="cash">Tunai
+                                    <input type="radio" id="transfer" name="pembayaran" value="transfer">Transfer
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;">
+                                <button type="submit">Pesan</button>
+                            </td>
+                        </tr>
+                    </form>
+                </table>
+            </section>
+            <br>
+            <br>
+            <footer class="footer"> 
+                <div class="footer-text">
+                    <p>Copyright &copy; 2024 by Jihan Melyanasari Putri | All Rights Reserved.</p>
+                </div>
+            </footer>
+        </body>
+    </html>

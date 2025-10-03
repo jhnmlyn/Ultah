@@ -1,0 +1,352 @@
+@import url('https://fonts.cdnfonts.com/css/e-engal');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.google.com/specimen/Kanit');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: white;
+    font-family: "Playfair Display", serif;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color:white;
+    padding: 25px 20px;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header.sticky {
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.navbar-logo {
+    color: rgb(195, 17, 17);
+    font-family: 'e Engal', sans-serif;
+    font-size: 35px;
+    font: bold;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-top: 0.3rem;
+}
+
+.navbar a {
+    color: rgb(195, 17, 17);
+    margin-right: 1rem;
+    position: relative;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Kanit';
+    padding-right: 2rem;
+}
+
+.bx {
+    font-weight: 500;
+    font-style: normal;
+    font-family: boxicons !important;
+    line-height: 1;
+    display: inline-block;
+    font-size: 25px;
+    padding-right: 0.7rem;
+}
+
+.home {
+    margin-top: -7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content {
+    padding: 2rem 3rem;
+    max-width: 70rem;
+}
+
+.home-content h1 {
+    font-size: 6rem;
+    line-height: 1;
+    font-family: 'e Engal', sans-serif;
+    color: rgb(195, 17, 17);
+}
+
+.home-content p {
+    font-size: 20px;
+    margin-top: 1.5rem;
+    font-weight: 500;
+    color: black;
+}
+
+img {
+    padding-right: 5rem;
+    width: 100%;
+    height: 50%;
+    padding: 2rem;
+}
+
+.deals {
+    margin-top: 4rem;
+    align-items: center;
+    padding: 25px;
+}
+
+.deals-title h1 {
+    font-family: 'e Engal', sans-serif;
+    color: rgb(195, 17, 17);
+    text-align: left;
+    padding-left: 2rem;
+    font-size: 40px;
+    word-spacing: 10px;
+    letter-spacing: 4px;
+}
+
+.deals-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center; 
+    padding-right: 1rem;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
+
+.image-container img {
+    height: auto;
+    width: 50%;
+    border-radius: 50px;
+}
+
+.image-container img:hover {
+    transform: scale(1.05)
+}
+
+.menu {
+    margin-top: 8rem;
+    padding: 3rem;
+    margin-bottom: 2rem;
+}
+
+.menu-title h1 {
+    font-family: 'e Engal', sans-serif;
+    color: rgb(195, 17, 17);
+    text-align: center;
+    padding: 1rem;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+.menu-card {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+    height: 400px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img{
+    padding: 0.5rem;
+    width: 100%;
+    height: 67%;
+    object-fit: cover;
+}
+
+.card img[alt="Pizza Meat"] {
+    width: 82%;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.card img[alt="Pizza Pepperoni"] {
+    width: 83%;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.card img[alt="Pizza Supreme"] {
+    width: 78%;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.card img[alt="Pizza Onion"] {
+    width: 85%;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.card img[alt="Chicken Wings"] {
+    width: 85%;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.card img[alt="Lemon Tea"] {
+    width: 85%;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.card img[alt="Milkshake Straw"] {
+    width: 100%;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.card img[alt="Milkshake Choco"] {
+    width: 100%;
+    margin: 0 auto;
+    object-fit: contain;
+    height: 68%;
+}
+
+.card h2{
+    font-size: 1,5rem;
+    margin-top: 10px 0;
+    padding-top: 0.5rem;
+    color: black;
+}
+
+.card p {
+    padding: 0 10px;
+}
+
+.card .price{
+    font-size: 1.2em;
+    color: rgb(195, 17, 17);
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.order {
+    padding: 20px;
+    background-color: white;
+    border: 2px solid rgb(195, 17, 17);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.order-title h1 {
+    font-family: 'e Engal', sans-serif;
+    color: rgb(195, 17, 17);
+    text-align: center;
+    padding: 1rem;
+    font-size: 40px;
+    letter-spacing: 5px;
+
+}
+
+.form-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.form-table td {
+    padding: 10px;
+    vertical-align: top;
+    color: #333333;
+    font-family: "Playfair Display", serif;
+    font-size: 14px;
+    border-bottom: 1px solid rgb(195, 17, 17);
+}
+
+.form-table input[type="text"],
+.form-table input[type="number"],
+.form-table input[type="email"],
+.form-table textarea,
+.form-table select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-table textarea {
+    resize: none;
+    height: 60px;
+}
+
+.form-table input[type="radio"] {
+    margin-right: 5px;
+}
+
+.form-table .form-name,
+.form-table .form-payment {
+    font-weight: bold;
+    color: rgb(195, 17, 17);
+}
+
+.form-table .form-payment {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+button {
+    background-color: rgb(195, 17, 17);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background color 0.3s ease;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: rgb(195, 17, 17);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 7%;
+    background: rgb(195, 17, 17);
+}
+  
+.footer-text p {
+    font-size: 1.2rem;
+    color: white;
+}
+
